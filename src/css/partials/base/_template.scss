@@ -14,15 +14,16 @@ html {
 }
 
 body {
-  margin: 0;
-  background-color: $body-bg;
-  color: $text-color;
-  font-family: $font-family;
-  font-size: $font-size-text;
+   color: #898989;
+  line-height: 1.7em;
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: $link-color;
+  color: #fab702;
   text-decoration: none;
   @include transition();
 }
@@ -68,27 +69,5 @@ h4{
   font-weight: normal;
 }
 
-.padding-block {
-  padding: 20px;
-}
 
-.serv-wrapper70 {
-  max-width: 70%;
 
-  &__title {
-    font-size: $font-size-h1;
-    font-weight: $bold;
-    line-height: 42px;
-    padding-left: 15px;
-  }
-  @include mq($from:xs, $until:xl){
-    min-width: 100%;
-  }
-}
-
-.serv-wrapper30 {
-  max-width: 30%;
-  @include mq($from:xs, $until:xl){
-    min-width: 100%;
-  }
-}

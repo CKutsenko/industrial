@@ -26,8 +26,8 @@ $screen-xl:                   1280px; // Extra large screen / wide desktop
 $container-max-widths: (
         sm:                   480px,
         md:                   760px,
-        lg:                   980px,
-        xl:                   1280px
+        lg:                   992px,
+        xl:                   1080px
 ) !default;
 
 
@@ -64,15 +64,13 @@ $mq-breakpoints: (
 // Color table
 
 $white:                       #ffffff;
-$black:                       #010101;
-$light-blue:                  #33bee5;
+$black:                       #16242e;
+$blue:                        #3498db;
 $red:                         #9d2628;
-$dark-blue:                   #314b66;
-$btn-blue:                    #0054a6;
+$green:                       #69cd72;
+$dark-green:                  #398f41;
 $btn-border:                  #2e3c88;
-$btn-box-shadow:              rgba($btn-border, 0.2);
-$btn-box-shadow-hover:        darken($dark-blue, 0.2);
-$grey:                        #424347;
+$grey:                        #898989;
 $breadcrumbs-grey:            #989898;
 $lightest_grey:               #cccccc;
 $light-grey:                  #f5f5fa;
@@ -85,16 +83,7 @@ $error:                       #d9534f;
 
 // Colors in use
 
-$body-bg:                     $white;
-$grey-bg:                     $light-grey;
-$text-color:                  $black;
 
-$link-color:                  $text-color;
-$link-color--hover:           $light-blue;
-
-$text-color-white:            $white;
-$link-color-white:            $text-color-white;
-$link-color-white--hover:     darken($link-color-white, 20%);
 
 
 
