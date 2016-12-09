@@ -1,0 +1,27 @@
+.social-stripe {
+  min-height: 45px;
+  background-color: $black;
+  a {
+    color: $grey;
+    transition: .3s;
+    &:hover {
+      color: $blue;
+    }
+  }
+  .row {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+  &__item {
+    display: inline-block;
+    margin: 10px 10px 10px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
