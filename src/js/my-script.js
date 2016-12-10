@@ -3,9 +3,7 @@
 
 jQuery(document).ready(function($){
 
-
-
-    $('.promo-slider').slick({
+  $('.promo-slider').slick({
     infinite: true,
     arrows: true,
     dots: false,
@@ -18,6 +16,30 @@ jQuery(document).ready(function($){
     autoplaySpeed: 4000
   });
 
+  $('.js-news-slider').slick({
+    infinite: true,
+    arrows: true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+     responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        arrows: false
+      }
+    }
+  ]
+  });
 
 });
 
