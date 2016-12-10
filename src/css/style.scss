@@ -5,7 +5,7 @@
 @import "partials/abstracts/bootstrap-flex";
 @import "vendor/normalize";
 @import "vendor/mq";
-// @import "vendor/slick";
+@import "vendor/slick";
 
 // Abstracts
 
@@ -23,3 +23,4 @@
 @import "partials/components/social-stripe";
 @import "partials/components/form";
 @import "partials/components/form-states";
+@import "partials/components/promo-slider";
