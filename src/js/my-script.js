@@ -41,6 +41,25 @@ jQuery(document).ready(function($){
   ]
   });
 
+  $('.js-reviews-slider').slick({
+    infinite: true,
+    arrows: true,
+    dots: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+     responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        arrows: false
+      }
+    }
+  ]
+  });
+
 });
 
 
