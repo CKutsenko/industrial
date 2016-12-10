@@ -13,7 +13,7 @@ include ../abstracts/bemto/bemto.pug
         +e.H3.title Navigation
         +b.UL.navigation-list
           +e.LI.item
-            +e.A.link(href="#") > Главная
+            +e.A.link--active(href="#") > Главная
           +e.LI.item
             +e.A.link(href="#") > О компании
           +e.LI.item
@@ -64,9 +64,9 @@ include ../abstracts/bemto/bemto.pug
               th Суббота
               td 9am > 5pm
             tr
-              th Воскресенье
-              td
-                span Закрыто
+              th
+                span Воскресенье
+              td Закрыто
       .col-xs-12.col-md-3
         +e.H3.title Последние новости
         +e.inner
@@ -77,5 +77,5 @@ include ../abstracts/bemto/bemto.pug
           +e.date 08.06.2016
         +e.H3.title Подписка
         +e.FORM.form
-          +e.INPUT.input(type="text" name="Поиск" placeholder="поиск")
+          +e.INPUT.input(type="text" name="Email" placeholder="Email")
 

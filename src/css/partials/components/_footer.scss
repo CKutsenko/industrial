@@ -1,4 +1,146 @@
 .footer {
   padding-top: 40px;
   background-color: #171717;
+  &__text {
+    margin-top: 30px;
+  }
+  &__title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 16px;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 22px;
+    &:after {
+    bottom: -1px;
+    content: "";
+    left: 0;
+    height: 3px;
+    position: absolute;
+    width: 73px;
+    background-color: $blue;
+    }
+  }
+  &__working-hours {
+    border: 2px solid #2e2e2e;
+    padding: 10px 0;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    width: 100%;
+    margin-bottom: 40px;
+    th {
+      padding: 0 20px;
+      vertical-align: middle;
+      text-align: left;
+      font-weight: 400;
+    }
+    td {
+      text-align: right;
+      padding: 0 20px;
+      color: #fff;
+    }
+    span {
+      color: $dark-green;
+    }
+  }
+  &__inner {
+    padding-top: 10px;
+    margin-bottom: 15px;
+  }
+  &__news {
+    color: #fff;
+    transition: .3s;
+    &:hover {
+      color: #898989;
+    }
+  }
+  &__date {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 20px;
+    &:before {
+    content: "\f073";
+    font-family: "FontAwesome";
+    font-size: 14px;
+    margin-right: 10px;
+    color: $blue;
+    position: absolute;
+    left: -20px;
+    }
+  }
+  &__input {
+    border: none;
+    padding: 10px 17px;
+    width: 100%;
+    outline: none;
+  }
+  &__form {
+    position: relative;
+    overflow: hidden;
+    &:after {
+    color: #fff;
+    content: "\f0e0";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    line-height: 2.2;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 58px;
+    background-color: $blue;
+    cursor: pointer;
+    height: 80px;
+    }
+  }
+}
+
+.navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  margin-bottom: 20px;
+  &__item {
+    width: 50%;
+    display: block;
+    margin-bottom: 17px;
+  }
+  &__link {
+    color: #898989;
+    transition: .3s;
+    &--active {
+      color: $blue;
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.socials-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 14px;
+  padding-bottom: 20px;
+  &__link {
+    margin-right: 20px;
+  }
+  &__link {
+    color: #fff;
+    transition: .3s;
+    &:hover {
+      color: $blue;
+    }
+  }
 }
