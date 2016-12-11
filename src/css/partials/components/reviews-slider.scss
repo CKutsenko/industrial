@@ -1,0 +1,128 @@
+.reviews-slider {
+  padding: 30px 0;
+  position: relative;
+  background-color: #f8f9f9;
+  &__title {
+    margin-left: 15px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #000;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin-bottom: 50px;
+    &:after {
+    bottom: -16px;
+    content: "";
+    left: 0;
+    height: 3px;
+    position: absolute;
+    width: 73px;
+    background-color: $blue;
+    }
+  }
+  .slick-slide {
+    outline: none;
+    padding-bottom: 20px;
+  }
+  .slick-arrow {
+    position: absolute;
+    z-index: 100;
+    background-color: $blue;
+    height: 40px;
+    width: 49px;
+    font-size: 0;
+    line-height: 40px;
+    text-align: center;
+    outline: none;
+    border: none;
+    transition: .3s;
+    &:hover {
+      background-color: $dark-blue;
+    }
+  }
+  .slick-next {
+    top: -70px;
+    right: 0;
+    margin-right: 15px;
+    border-radius: 0 3px 3px 0;
+    &:after {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    content: "\f104";
+    font-family: FontAwesome;
+    transform: rotate(-180deg);
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    border-right: 1px solid $dark-blue;
+    }
+  }
+  .slick-prev {
+    top: -70px;
+    right: 0;
+    margin-right: 64px;
+    border-radius: 3px 0 0 3px;
+    &:after {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    content: "\f104";
+    font-family: FontAwesome;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    }
+  }
+  &__inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  &__img,
+  &__text-inner {
+    flex: 0 0 50%;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 100%;
+    }
+  }
+  &__img {
+    margin-right: 20px;
+    @include mq($from:xs, $until:md){
+      display: none;
+    }
+  }
+  &__name {
+    font-size: 21px;
+    color: #000;
+    margin: 0;
+    line-height: 1;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__position {
+    font-size: 13px;
+    color: $blue;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  &__text {
+    margin-top: 10px;
+    font-size: 14px;
+    padding-right: 15px;
+  }
+}
