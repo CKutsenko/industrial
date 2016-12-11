@@ -1,0 +1,87 @@
+.history {
+  padding-top: 25px;
+
+  &__title {
+    font-weight: 500;
+    line-height: 1.1;
+    color: #000;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin-bottom: 50px;
+    &:after {
+    bottom: -16px;
+    content: "";
+    left: 0;
+    height: 3px;
+    position: absolute;
+    width: 73px;
+    background-color: $blue;
+    }
+  }
+  &__item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-bottom: 30px;
+    position: relative;
+    &:after {
+     position: absolute;
+     content: '';
+    background-color: #e4e4e4;
+    bottom: 0;
+    left: 8.2%;
+    top: 4px;
+    width: 2px;
+    @include mq($from:xs, $until:md){
+      display: none;
+      }
+    }
+    &:before {
+    box-shadow: 0 0 0 2px #fff;
+    border-radius: 100%;
+    height: 8px;
+    left: 8%;
+    top: 4px;
+    width: 8px;
+    z-index: 1;
+    background-color: $blue;
+    position: absolute;
+    content: '';
+    @include mq($from:xs, $until:md){
+      display: none;
+      }
+    }
+    &--last {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__year {
+    flex: 0 0 12%;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 20%;
+      }
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 24px;
+      color: $blue;
+    }
+  }
+  &__contant {
+    flex: 0 0 88%;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 80%;
+      }
+  }
+  &__subtitle {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 13px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+  }
+}
