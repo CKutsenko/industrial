@@ -1,0 +1,81 @@
+//Faq
+
+.faq {
+  @include mq($from:xs, $until:xl){
+      padding-top: 25px;
+   }
+  &__title {
+    font-weight: 500;
+    line-height: 1.1;
+    color: #000;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin-bottom: 50px;
+    &:after {
+    bottom: -16px;
+    content: "";
+    left: 0;
+    height: 3px;
+    position: absolute;
+    width: 73px;
+    background-color: $blue;
+    }
+  }
+  &__accordion {
+    margin: 40px 0;
+  }
+  &__promo-text {
+    color: #000;
+  }
+  &__box {
+    padding: 15px 12px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-bottom: none;
+    &--last {
+      border: 1px solid rgba(0,0,0,.1);
+    }
+  }
+
+  .col-lg-9 {
+    border-right: 1px solid rgba(0,0,0,.1);
+    padding-top: 25px;
+  }
+
+  &__subtitle  {
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 27px;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+        color: $blue;
+    }
+  }
+
+  &__subtext {
+    font-style: normal;
+    font-size: 14px;
+    display: none;
+  }
+  &__wrapper {
+    padding-top: 35px;
+  }
+  &__link {
+    display: block;
+    color: #898989;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    transition: .3s;
+    &:hover {
+        color: $blue;
+    }
+  }
+}
+
