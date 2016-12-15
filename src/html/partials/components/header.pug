@@ -23,6 +23,9 @@ include ../abstracts/bemto/bemto.pug
         +e.logo-wrapper
           +e.img
             img(src="img/logo.png")
+        +e.hamburger
+          +b.A.hamburger(href="#")
+            i.fa.fa-bars
         +e.wrapper
           +e.box
             +e.img
@@ -45,9 +48,9 @@ include ../abstracts/bemto/bemto.pug
   +b.NAV.nav
     .container
       .row
-        +e.hamburger
-          +b.A.hamburger(href="#")
-            i.fa.fa-bars
+        //- +e.hamburger
+        //-   +b.A.hamburger(href="#")
+        //-     i.fa.fa-bars
         +e.UL.list
           +e.LI.item
             +e.A.link--active(href="index.html") Главная

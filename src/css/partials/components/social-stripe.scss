@@ -1,6 +1,9 @@
 .social-stripe {
   min-height: 45px;
   background-color: $black;
+  @include mq($from:xs, $until:xl){
+      display: none;
+    }
   a {
     color: $grey;
     transition: .3s;

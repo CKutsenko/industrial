@@ -6,6 +6,9 @@
   bottom: -35px;
   font-family: 'Roboto', sans-serif;
   z-index: 1000;
+      @include mq($from:xs, $until:xl){
+      display: none;
+    }
   .row {
     background-color: $black;
   }
