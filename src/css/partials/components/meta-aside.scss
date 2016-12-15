@@ -1,0 +1,44 @@
+.meta-aside {
+  &__title{
+    padding-left: 0;
+    text-transform: none;
+  }
+  &__link {
+    display: block;
+    color: #898989;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    transition: .3s;
+    &:hover {
+        color: $blue;
+    }
+  }
+  &__form {
+    padding-top: 25px;
+    width: 230px;
+    position: relative;
+  }
+  &__input {
+    width: 100%;
+    border: 1px solid #898989;
+    border-radius: 3px;
+    margin: 5px;
+    height: 37px;
+    padding: 7px 16px;
+    position: relative;
+    outline: none;
+  }
+  &__submit {
+    background: transparent none repeat scroll 0 0;
+    border: medium none transparent;
+    height: 37px;
+    position: absolute;
+    right: 8px;
+    top: 30px;
+    width: 37px;
+    color: #717171;
+    &:hover {
+      color: #000;
+    }
+  }
+}

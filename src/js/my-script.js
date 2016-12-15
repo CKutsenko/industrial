@@ -60,6 +60,7 @@ jQuery(document).ready(function($){
   ]
   });
 
+
       $('.faq__subtitle').click(function(e){
     e.preventDefault();
     if($(this).next('.faq__subtext').is(":visible")) {
@@ -74,22 +75,26 @@ jQuery(document).ready(function($){
   });
 
   var navWidth = $('.nav-aside').outerWidth();
-  $('.hamburger').click(function(e) {
+  $('.hamburger--menu').click(function(e) {
       e.preventDefault();
+      $(this).removeClass('hamburger--menu');
       $(this).addClass('hamburger--close');
       $('body').css({'overflow':'hidden'});
       $(this).closest('body').find('.header').css({'right':navWidth+'px'});
       $(this).closest('body').find('main').css({'right':navWidth+'px'});
       $(this).closest('body').find('.nav-aside').css({'right':navWidth+'px'});
   });
-  $('.hamburger--close').click(function(e) {
+
+    $('.hamburger--close').click(function(e) {
       e.preventDefault();
       $(this).removeClass('hamburger--close');
+      $(this).addClass('hamburger--menu');
       $('body').css({'overflow':'auto'});
       $(this).closest('body').find('.header').css({'right':0});
       $(this).closest('body').find('main').css({'right':0});
       $(this).closest('body').find('.nav-aside').css({'right':0});
   });
+
 
 });
 

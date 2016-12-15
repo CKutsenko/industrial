@@ -1,0 +1,16 @@
+extends partials/templates/template.pug
+
+block content
+  +b.page-header
+    .container
+      .row
+        .col-xs-12
+          +e.H1.title Ну так себе новость
+  +b.breadcrumbs
+    .container
+      .row
+        .col-xs-12
+          +e.A.link(href="index.html") Главная
+          +e.SPAN.item >
+          +e.SPAN.item Ну так себе новость
+  include partials/components/single-news.pug

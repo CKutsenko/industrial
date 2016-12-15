@@ -1,0 +1,124 @@
+.single-news {
+  padding: 30px 0 30px;
+  &__box {
+    border: 1px solid #e5e5e5;
+  }
+  &__title {
+    font-size: 22px;
+    margin: 0;
+    padding-top: 20px;
+    word-wrap: break-word;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+  }
+  &__inner {
+    padding: 5px 30px;
+    border: 1px solid #e5e5e5;
+    border-style: solid none;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-size: 11px;
+    i {
+      font-size: 14px;
+      color: $blue;
+      margin-right: 5px;
+    }
+  }
+  &__name {
+    margin-right: 10px;
+  }
+  &__text {
+    padding: 0 30px;
+  }
+
+  &__blockquote {
+    text-transform: none;
+    font-style: italic;
+    color: #000;
+    font-size: 14px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 3px;
+      background-color: $blue;
+      left: -70px;
+    }
+  }
+  &__cite {
+    font-weight: 600;
+    text-transform: none;
+  }
+  &__post-info {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 22px;
+    width: 100%;
+  }
+
+  &__row {
+    background-color: #f7f7f7;
+  }
+
+  &__item {
+        border-right: 1px solid #e5e5e5;
+    color: #000000;
+    font-weight: normal;
+    padding-left: 41px;
+    padding-right: 41px;
+    text-align: center;
+    width: 1px;
+    white-space: nowrap;
+  }
+  &__item,
+  &__contant {
+    padding: 16px 0;
+  }
+  &__item {
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px 10px;
+  }
+  &__contant {
+    padding-left: 10px;
+    font-style: italic;
+    a{
+      color: #898989;
+      transition:.3s;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  ul, ol {
+    padding-left: 50px;
+  }
+  h2,h3,h4,h5 {
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: #000;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .meta-aside__title {
+    padding-left: 0;
+    text-transform: none;
+  }
+}

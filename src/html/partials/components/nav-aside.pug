@@ -1,0 +1,38 @@
+include ../abstracts/bemto/bemto.pug
+
+//Nav Aside
++b.nav-aside
+  .container
+      +e.FORM.form
+        +e.INPUT.input(type="text" name="Поиск" placeholder="Поиск")
+        +e.BUTTON.submit(type="submit")
+          i.fa.fa-search
+      +e.wrapper
+        +e.box
+          +e.img
+            i.fa.fa-home
+          +e.text
+            p ул. Коммунистов, 23/1
+            span Москва, 123465
+      +e.wrapper
+        +e.box
+          +e.img
+            i.fa.fa-envelope
+          +e.text
+            p Отправить сообщение
+            a(href="mailto:mail@domain.com") mail@domain.com
+      +e.inner
+        +e.A.btn(href="tel:+79233453434")
+          span Звони!
+          p +7 923 345-34-34
+      +e.UL.list
+        +e.LI.item
+          +e.A.link--active(href="index.html") Главная
+        +e.LI.item
+          +e.A.link(href="about-us.html") О компании
+        +e.LI.item
+          +e.A.link(href="services.html") Услуги
+        +e.LI.item
+          +e.A.link(href="news.html") Новости
+        +e.LI.item
+          +e.A.link(href="contact.html") Контакты

@@ -1,0 +1,78 @@
+include ../abstracts/bemto/bemto.pug
+
+//Single News
++b.SECTION.single-news
+  .container
+    .row
+      .col-xs-12.col-lg-9
+        +e.box
+          +e.img
+            img(src="img/post1.jpg" alt="img")
+          +e.H2.title Ну так себе новость
+          +e.inner
+            +e.SPAN.name
+              i.fa.fa-user
+              | posted by: EKATERINA
+            +e.SPAN.date
+              i.fa.fa-calendar
+              | 18.01.2016
+          +e.P.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur rutrum diam, ut commodo ipsum elementum. Duis quis iaculis purus, eget mattis urna. Quisque consectetur odio ac ante fermentum malesuada. Nullam eget lectus euismod, rutrum quam quis, venenatis ligula. Integer egestas elit ipsum. Vivamus nec egestas turpis, et semper neque. Pellentesque ac nisl feugiat, blandit mauris ut, sollicitudin quam. Vivamus vestibulum est scelerisque mi tempus fermentum. Vestibulum sed orci cursus, dictum nisl nec, iaculis tellus.
+          h2 заголовок h2
+          h3 заголовок h3
+          h4 заголовок h4
+          h5 заголовок h5
+          +e.P.text Sed eget cursus metus. Proin finibus volutpat consectetur. Proin vitae arcu vitae dolor porttitor vestibulum sed non dolor. Pellentesque lacinia erat diam, in dapibus mi venenatis non. Praesent ut massa est. Praesent eu odio auctor, aliquet risus non, auctor nisl. Vivamus dictum tincidunt consectetur. Aliquam commodo dignissim lorem vitae viverra. Sed quis maximus dolor. In hac habitasse platea dictumst. Cras auctor magna quis lorem sodales convallis. Quisque sodales congue quam, sed tincidunt dolor mollis id. Nunc sed lacus semper mauris lacinia volutpat. Quisque consectetur et nunc in vulputate. Nullam euismod lectus nec metus sodales scelerisque. Ut mi est, commodo non purus eu, ultricies sagittis sapien.
+          +e.inner
+            +e.BLOCKQUOTE.blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur rutrum diam, ut commodo ipsum elementum ac. Duis quis iaculis purus, eget mattis urna. Quisque consectetur odio ac ante fermentum malesuada. Nullam eget lectus euismod, rutrum quam quis, venenatis ligula. Integer egestas elit ipsum. Vivamus nec egestas turpis, et semper neque.
+            +e.CITE.cite Кто-то так сказал
+          +e.P.text Sed eget cursus metus. Proin finibus volutpat consectetur. Proin vitae arcu vitae dolor porttitor vestibulum sed non dolor. Pellentesque lacinia erat diam, in dapibus mi venenatis non. Praesent ut massa est. Praesent eu odio auctor, aliquet risus non, auctor nisl. Vivamus dictum tincidunt consectetur. Aliquam commodo dignissim lorem vitae viverra. Sed quis maximus dolor. In hac habitasse platea dictumst. Cras auctor magna quis lorem sodales convallis. Quisque sodales congue quam, sed tincidunt dolor mollis id. Nunc sed lacus semper mauris lacinia volutpat. Quisque consectetur et nunc in vulputate. Nullam euismod lectus nec metus sodales scelerisque. Ut mi est, commodo non purus eu, ultricies sagittis sapien.
+          ul
+            li один
+            li два
+            li три
+              ul
+                li три и один
+                li три и два
+                li три и три
+            li четыре
+          +e.P.text Sed eget cursus metus. Proin finibus volutpat consectetur. Proin vitae arcu vitae dolor
+          ol
+            li один
+            li два
+            li три
+          +e.TABLE.post-info
+            tbody
+              +e.TR.row
+                +e.TH.item Categories
+                +e.TD.contant
+                  a(href="page.html") Energy,
+                  a(href="page.html") Industry,
+                  a(href="page.html") Manufacturing
+              +e.TR.row
+                +e.TH.item Tags
+                +e.TD.contant
+                  a(href="page.html") Beautiful,
+                  a(href="page.html") Eco,
+                  a(href="page.html") Green
+      .col-xs-12.col-lg-3
+        +b.meta-aside
+          +e.A.link(href="page.html") Сертификация качества
+          +e.A.link(href="page.html") Сертификация качества
+          +e.A.link(href="page.html") Сертификация качества
+          +e.FORM.form
+            +e.INPUT.input(type="text" name="Поиск" placeholder="Поиск...")
+            +e.BUTTON.submit(type="submit")
+              i.fa.fa-search
+          +e.H3.title Свежие записи
+          +e.A.link(href="page.html") Ну так себе запись
+          +e.A.link(href="page.html") И эта тоже так себе
+          +e.A.link(href="page.html") А эта вообще плоха
+          +e.H3.title Рубрики
+          +e.A.link(href="page.html") Ничего так рубрика
+          +e.A.link(href="page.html") Норм рубрика
+          +e.A.link(href="page.html") Рубрика "Шутки за 300"
+          +e.H3.title Мета
+          +e.A.link(href="page.html") Войти
+          +e.A.link(href="page.html") Уйти
+          +e.A.link(href="page.html") Не возвращаться
+

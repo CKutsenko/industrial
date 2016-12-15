@@ -1,0 +1,16 @@
+extends partials/templates/template.pug
+
+block content
+  +b.page-header
+    .container
+      .row
+        .col-xs-12
+          +e.H1.title Одинокая страница
+  +b.breadcrumbs
+    .container
+      .row
+        .col-xs-12
+          +e.A.link(href="index.html") Главная
+          +e.SPAN.item >
+          +e.SPAN.item Одинокая страница
+  include partials/components/page.pug
