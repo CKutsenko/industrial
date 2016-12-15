@@ -51,12 +51,17 @@
     text-align: center;
     position: absolute;
     top: 15px;
-    right: 380px;
-    width: 50px;
+    right: 15px;
+    width: 60px;
     text-align: center;
-    height: 50px;
+    height: 60px;
     line-height: 50px;
     color: #fff;
+
+    i {
+      font-size: 30px;
+      color: #000;
+    }
 
     @include mq($from:sm) {
       top: 25px;
@@ -102,5 +107,11 @@
   }
 }
 .header {
+  @include transition();
+  position: relative;
+}
+
+main{
+  @include transition();
   position: relative;
 }

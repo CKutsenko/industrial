@@ -73,7 +73,23 @@ jQuery(document).ready(function($){
     }
   });
 
-
+  var navWidth = $('.nav-aside').outerWidth();
+  $('.hamburger').click(function(e) {
+      e.preventDefault();
+      $(this).addClass('hamburger--close');
+      $('body').css({'overflow':'hidden'});
+      $(this).closest('body').find('.header').css({'right':(-navWidth)+'px'});
+      $(this).closest('body').find('main').css({'right':(-navWidth)+'px'});
+      $(this).closest('body').find('.nav-aside').css({'right':(-navWidth)+'px'});
+  });
+  $('.hamburger--close').click(function(e) {
+      e.preventDefault();
+      $(this).removeClass('hamburger--close');
+      $('body').css({'overflow':'auto'});
+      $(this).closest('body').find('.header').css({'right':0});
+      $(this).closest('body').find('main').css({'right':0});
+      $(this).closest('body').find('.nav-aside').css({'right':0});
+  });
 
 });
 
