@@ -2,7 +2,6 @@
   background-color: #000;
   @include transition();
   position: fixed;
-  height: 100%;
   top: 0;
   right: 0;
   transform: translateX(100%);

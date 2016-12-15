@@ -75,26 +75,24 @@ jQuery(document).ready(function($){
   });
 
   var navWidth = $('.nav-aside').outerWidth();
-  $('.hamburger--menu').click(function(e) {
+  $('.hamburger').click(function(e) {
       e.preventDefault();
-      $(this).removeClass('hamburger--menu');
-      $(this).addClass('hamburger--close');
-      $('body').css({'overflow':'hidden'});
-      $(this).closest('body').find('.header').css({'right':navWidth+'px'});
-      $(this).closest('body').find('main').css({'right':navWidth+'px'});
-      $(this).closest('body').find('.nav-aside').css({'right':navWidth+'px'});
+      if ($(this).hasClass('hamburger--menu')){
+        $(this).removeClass('hamburger--menu');
+        $(this).addClass('hamburger--close');
+        $('body').css({'overflow':'hidden'});
+        $(this).closest('body').find('.header').css({'right':navWidth+'px'});
+        $(this).closest('body').find('main').css({'right':navWidth+'px'});
+        $(this).closest('body').find('.nav-aside').css({'right':navWidth+'px'});
+      } else if ($(this).hasClass('hamburger--close')){
+        $(this).removeClass('hamburger--close');
+        $(this).addClass('hamburger--menu');
+        $('body').css({'overflow':'auto'});
+        $(this).closest('body').find('.header').css({'right':0});
+        $(this).closest('body').find('main').css({'right':0});
+        $(this).closest('body').find('.nav-aside').css({'right':0});
+      }
   });
-
-    $('.hamburger--close').click(function(e) {
-      e.preventDefault();
-      $(this).removeClass('hamburger--close');
-      $(this).addClass('hamburger--menu');
-      $('body').css({'overflow':'auto'});
-      $(this).closest('body').find('.header').css({'right':0});
-      $(this).closest('body').find('main').css({'right':0});
-      $(this).closest('body').find('.nav-aside').css({'right':0});
-  });
-
 
 });
 
