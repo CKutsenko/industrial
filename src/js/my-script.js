@@ -78,9 +78,9 @@ jQuery(document).ready(function($){
       e.preventDefault();
       $(this).addClass('hamburger--close');
       $('body').css({'overflow':'hidden'});
-      $(this).closest('body').find('.header').css({'right':(-navWidth)+'px'});
-      $(this).closest('body').find('main').css({'right':(-navWidth)+'px'});
-      $(this).closest('body').find('.nav-aside').css({'right':(-navWidth)+'px'});
+      $(this).closest('body').find('.header').css({'right':navWidth+'px'});
+      $(this).closest('body').find('main').css({'right':navWidth+'px'});
+      $(this).closest('body').find('.nav-aside').css({'right':navWidth+'px'});
   });
   $('.hamburger--close').click(function(e) {
       e.preventDefault();
