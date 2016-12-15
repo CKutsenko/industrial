@@ -2527,7 +2527,21 @@ main {
     text-align: center;
     width: 1px;
     white-space: nowrap; }
-  @media (min-width: 540px) {
+  .single-news__item, .single-news__contant {
+    padding: 16px 0; }
+  .single-news__item {
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px 10px; }
+  .single-news__contant {
+    padding-left: 10px;
+    font-style: italic; }
+    .single-news__contant a {
+      color: #898989;
+      transition: .3s; }
+      .single-news__contant a:hover {
+        color: #000; }
+      @media (min-width: 540px) {
   .container {
     max-width: 480px; }
   .row-sm-top {
@@ -2705,7 +2719,7 @@ main {
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
     align-self: stretch; } }
-  @media (min-width: 768px) {
+      @media (min-width: 768px) {
   .container {
     max-width: 760px; }
   .row-md-top {
@@ -2883,7 +2897,7 @@ main {
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
     align-self: stretch; } }
-  @media (min-width: 1024px) {
+      @media (min-width: 1024px) {
   .container {
     max-width: 992px; }
   .row-lg-top {
@@ -3061,7 +3075,7 @@ main {
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
     align-self: stretch; } }
-  @media (min-width: 1280px) {
+      @media (min-width: 1280px) {
   .container {
     max-width: 1080px; }
   .row-xl-top {
@@ -3239,7 +3253,7 @@ main {
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
     align-self: stretch; } }
-  @media (max-width: 79.99em) {
+      @media (max-width: 79.99em) {
   .header-contacts {
     background-color: #3498db;
     background-image: none;
@@ -3315,21 +3329,21 @@ main {
     padding-top: 0; }
   .faq {
     padding-top: 25px; } }
-  @media (min-width: 33.75em) {
+      @media (min-width: 33.75em) {
   .header-contacts__hamburger {
     top: 25px; }
   .nav__hamburger {
     top: 25px; } }
-  @media (min-width: 33.75em) and (max-width: 47.99em) {
+      @media (min-width: 33.75em) and (max-width: 47.99em) {
   .nav__list {
     top: 105px; } }
-  @media (min-width: 48em) and (max-width: 79.99em) {
+      @media (min-width: 48em) and (max-width: 79.99em) {
   .nav__list {
     top: 110px; } }
-  @media (max-width: 79.99em) and (max-width: 79.99em) {
+      @media (max-width: 79.99em) and (max-width: 79.99em) {
   .nav__sub-menu li {
     padding: 10px 0; } }
-  @media (max-width: 47.99em) {
+      @media (max-width: 47.99em) {
   .form--application .form-group {
     width: 100%; }
   .promo-slider__title {
