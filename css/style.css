@@ -2516,6 +2516,8 @@ main {
     border-spacing: 0 10px;
     margin-top: 22px;
     width: 100%; }
+  .single-news__row {
+    background-color: #f7f7f7; }
   .single-news__item {
     border-right: 1px solid #e5e5e5;
     color: #000000;
